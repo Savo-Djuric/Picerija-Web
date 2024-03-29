@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background-color: red;
+  color: white;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+nav .logo {
+  margin-right: auto;
+}
+
+nav img {
+  width: 30px;
+  height: 30px;
+}
+
+nav img {
+  width: 30px;
+  height: 30px;
+}
+
+h2 {
+  text-shadow: 2px 2px 8px green;
+  padding: 20px;
+}
+
+nav .logo img {
+  height: 50px;
+  width: 50px;
+}
+
+nav ul.meni {
+  display: flex;
+  list-style: none;
+}
+
+nav ul.menu li {
+  margin-left: 20px;
+}
+
+nav ul.meni li:first-child {
+  margin-left: 0;
+}
+
+nav ul.meni li a {
+  color: white;
+  text-decoration: none;
+  padding-left: 15px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+nav ul.meni li a:hover {
+  text-decoration: none;
+  font-size: larger;
+}
+
+section h2 {
+  font-size: 16vw;
+  background: rgb(107, 106, 106);
+  background: linear-gradient(0deg, rgb(127, 126, 126) 0%, rgb(89, 88, 88) 55%);
+  padding: 20px 40px;
+  mix-blend-mode: screen;
+}
+.levo {
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 40%;
+  float: left;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.desno {
+  margin-top: 20px;
+  margin-right: 30px;
+  width: 40%;
+  float: right;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.levo img {
+  margin-bottom: 0;
+  border: solid white 2px;
+  box-shadow: 4px 4px 8px rgb(0, 0, 0);
+  display: block;
+}
+.desno img {
+  margin-bottom: 0;
+  border: solid white 2px;
+  box-shadow: 4px 4px 8px rgb(0, 0, 0);
+  display: block;
+}
+#naslov h1 {
+  color: red;
+  font-size: 30px;
+  background-color: black;
+  text-align: center;
+  position: relative;
+  animation: slide 5s ease-in-out infinite;
+  width: 80%;
+}
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 1170px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.cenovnik ul {
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px green;
+}
+
+/* Responsivnost */
+@media (max-width: 600px) {
+  #naslov h1 {
+    animation: none;
+    width: 100%;
+  }
+}

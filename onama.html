@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stil.css">
+    <!-- NASLOV -->
+  <title>O nama</title>
+  <!-- OPIS -->
+  <meta
+    name="description"
+    content="Njabolja picerija u gradu."
+  />
+  <!-- KLJUCNE RECI -->
+  <meta
+    name="keywords"
+    content="Pica, picerija, pancerote, vrhunska"
+  />
+  <!-- AUTOR -->
+  <meta name="author" content="Savo Djuric" />
+  <link rel="stylesheet" type="text/css" href="onama.css">
+  <script src="dark-mode.js"></script>
+
+  <script>
+    function toggleDarkMode() {
+      var body = document.getElementsByTagName("body")[0];
+      var nav = document.getElementsByTagName("nav")[0];
+      var logo = document.getElementsByClassName("logo")[0];
+      var meni = document.getElementsByClassName("meni")[0];
+      var intro = document.getElementById("intro");
+      var istorija = document.getElementById("istorija");
+      var misija = document.getElementById("misija");
+      var footer = document.getElementsByTagName("footer")[0];
+      body.classList.toggle("tamni-mod");
+      nav.classList.toggle("tamni-mod");
+      logo.classList.toggle("tamni-mod");
+      meni.classList.toggle("tamni-mod");
+      intro.classList.toggle("tamni-mod");
+      misija.classList.toggle("tamni-mod");
+      footer.classList.toggle("tamni-mod");
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="html.html"><img src="logo.png" alt="Pica"></a>
+    </div>
+    <ul class="meni">
+      <li><a href="Onama.html"><img src="OnamaPic.png" alt="O nama"/></a></li>
+      <li><a href="Proizvodi.html"><img src="ProizvodiPic.png" alt="Proizvodi"/></a></li>
+      <li><a href="Kontakt.html"><img src="KontaktPic.png" alt="Kontakt"/></a></li>
+      <li><a href="Galerija.html"><img src="GalerijaPic.png" alt="Galerija"/></a></li>
+      <li><button onclick="toggleDarkMode()">svetla/tamna</button></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="intro">
+      <h2>Trenuci i ukusi koji se pamte <span style="color:blue">Bella Ciao</span></span></h2>
+      <p>Svaki gost okusivsi nase specijalitete, odaje se utisku da se nalazi u Napulju.</p>
+    </section>
+
+    <section id="istorija">
+      <h2>Naša istorija</h2>
+      <p>Picerija "Bella Ciao" nastala je 2010. godine. O uspešnosti poslovanja govore brojne nagrade. Naša pica je čak 3 puta proglašavana najboljom picom u Vojvodini, a na republičkom nivou 2 puta. Ono što bi naveli kao najveći uspeh jeste treće mesto na World Pizza Championship 2018. godine. </p>
+    </section>
+    <div id="ajax">
+      <button class="ajaxDugme" onclick="DodatneInformacije()">
+        informacije
+      </button>
+    </div>
+    <section id="misija">
+      <h2>Naša misija</h2>
+      <p>U svakom zalogaju - zadovoljstvo</p>
+
+      <footer>
+        <p><a href="mapa.html">Mapa</a></p>
+        <p>&copy; Picerija "Bella Ciao".</p>
+    </footer>
+    <script src="Ajax.js"></script>
+  </body>
+</html>

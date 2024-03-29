@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- NASLOV -->
+    <title>Proizvodi</title>
+    <!-- OPIS -->
+    <meta name="description" content="Njabolja picerija u gradu." />
+    <!-- KLJUCNE RECI -->
+    <meta name="keywords" content="Pica, picerija, pancerote, vrhunska" />
+    <!-- AUTOR -->
+    <meta name="author" content="Savo Djuric" />
+    <link rel="stylesheet" type="text/css" href="galerija.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="html.html"><img src="logo.png" alt="Pica" /></a>
+      </div>
+      <ul class="meni">
+        <li>
+          <a href="Onama.html"><img src="OnamaPic.png" alt="O nama" /></a>
+        </li>
+        <li>
+          <a href="Proizvodi.html"
+            ><img src="ProizvodiPic.png" alt="Proizvodi"
+          /></a>
+        </li>
+        <li>
+          <a href="Kontakt.html"><img src="KontaktPic.png" alt="Kontakt" /></a>
+        </li>
+        <li>
+          <a href="Galerija.html"
+            ><img src="GalerijaPic.png" alt="Galerija"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <section id="naslov">
+      <h1>Nase pice</h1>
+    </section>
+    <main>
+      <h2>Bela Ciao</h2>
+    </main>
+    <script>
+      function changeBg() {
+        const images = ['url("N1.png")', 'url("N2.png")', 'url("N3.png")'];
+        const section = document.querySelector("main");
+        const bg = images[Math.floor(Math.random() * images.length)];
+        section.style.backgroundImage = bg;
+      }
+      setInterval(changeBg, 1500);
+    </script>
+    <style>
+      main h2 {
+        font-size: 100px;
+        text-align: center;
+        padding-bottom: 100px;
+        padding-top: 100px;
+        color: white;
+      }
+    </style>
+    <div class="cenovnik">
+      <ul>
+        <li>Capriciossa - 1200 RSD</li>
+        <li>Banaćnka - 1200 RSD</li>
+        <li>Šunka pizza - 1300 RSD</li>
+        <li>Jalapeno - 1400 RSD</li>
+        <li>Margarita - 1400 RSD</li>
+        <li>Quattro formaggi - 1500 RSD</li>
+        <li>Quattro stagioni - 1700 RSD</li>
+        <li>Palačinke - 800 RSD</li>
+        <li>Pancerote - 1500 RSD</li>
+      </ul>
+    </div>
+    <div class="sekcija">
+      <h2>
+        Picerija "Bella Ciao" je mesto koje treba da poseti svaki ljubitelj pice
+        i Italijanske kuhinje. Picerija nudi veliki broj pica specijaliteta, od
+        kapricoze, margarite, pikantnih pica, posnih pica, pa sve do vegan pice.
+        Uveravamo vas da cemo se videti ponovo nakon sto probate nase
+        specijalitete.
+      </h2>
+      <h2>
+        Uz to, nudimo i razne dodatke poput slatke i slane palacinke, pancerota,
+        krofna.
+      </h2>
+    </div>
+  </body>
+</html>
